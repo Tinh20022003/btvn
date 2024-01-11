@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kiem tra so chan hay le</title>
+</head>
+<body>
+    <p>Click the button to display a time-based greeting: </p>
+    <input type="number" name="" id="nhap">
+
+    <button onclick="myFunction()">GO</button>
+
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            var a = document.getElementById("nhap").value;
+            var greeting;
+            if (a % 2 == 0) {
+                greeting = a + " là số chẵn  ";
+            }else{
+                greeting = a + "là số lẻ";
+            }
+            document.getElementById("demo").innerHTML = greeting;
+    }
+    </script>
+</body>
+</html>
